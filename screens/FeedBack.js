@@ -25,8 +25,8 @@ export default function FeedBack() {
                 source={{ uri: "https://midias.agazeta.com.br/2024/09/18/a-nova-unidade-da-padaria-top-tambem-tem-hortifruti-acougue-e-outros-produtos-2430174-article.jpg" }}
             />
             <View style={style.faleconosco}>
-                <Text>Fale Conosco:</Text>
-                <View >
+                <Text style={{fontSize: 25}}>Fale Conosco:</Text>
+                <View style={{padding: 12}} >
                     <TextInput
                         placeholder='Nome'
                         onChange={handleChangeNome}
@@ -64,10 +64,12 @@ const style = StyleSheet.create({
         borderBottomColor: '#000',
         borderBottomWidth: 1,
         borderRadius: 12,
+        marginBottom: 12
     },
     faleconosco: {
         width: "90%",
-        backgroundColor: "#f1f1f1",
+        backgroundColor: "#949494",
         padding : 24,
+        borderRadius: 24,
     }
 })
